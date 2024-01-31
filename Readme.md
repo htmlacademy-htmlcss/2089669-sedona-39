@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Marianna](https://up.htmlacademy.ru/htmlcss/39/user/2089669).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/id85590).
 
 ---
 
