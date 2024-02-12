@@ -11,10 +11,11 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="#" aria-current="page">
-          <img class="logo-sedona-small" src="#" alt="Логотип «Седоны»"></a>
+          <img class="logo-sedona-small" src="#" alt="Логотип туристического городка Седоны">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link-current" href="#">Главная</a>
+            <a class="navigation-link-current" href="#" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -32,8 +33,8 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span class="button-icon-counter">Отелей в избранном: 12</span>
+              <span class="visually-hidden">Отелей в избранном:</span>
+              <span class="button-icon-counter">12</span>
             </a>
           </li>
         </ul>
@@ -45,7 +46,8 @@
       <!-- Секция "Hero" -->
       <section class="hero-index">
         <h1 class="visually-hidden">Туристический городок в Аризоне — Седона</h1>
-        <img class="logo-sedona-text" src="#" alt="Текстовый логотип города Седона: «Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!»">
+        <img class="logo-sedona-text" src="#" lang="en"
+          alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
       </section>
       <!-- Секция "Преимущества" -->
       <section class="advantages">
@@ -104,18 +106,19 @@
           Седоне</p>
         <a class="search-button button" href="">Поиск гостиницы в Седоне</a>
       </section>
-<!-- Сеция подписки -->
+      <!-- Секция подписки -->
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post" name="subscribe-form">
           <label class="visually-hidden" for="subscribe-email">E-mail</label>
-          <input class="field" type="email" name="mail-subscriber" id="subscribe-email" placeholder="Ваш e-mail">
+          <input class="field" type="email" name="mail-subscriber" id="subscribe-email" placeholder="Ваш e-mail"
+            required>
           <button class="subscribe-button button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-<!-- Футер -->
+    <!-- Футер -->
     <footer class="page-footer">
       <section class="socials">
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -137,10 +140,10 @@
           </li>
         </ul>
       </section>
-      <section class="cotacts">
+      <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    </section>
+        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
       <a class="developer-logo" href="https://htmlacademy.ru/">
         <img class="developer-logo-img" src="#" alt="Разработано в HTML-академии">
       </a>
