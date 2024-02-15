@@ -95,13 +95,13 @@
           <!-- Фильтр цены (пока без range) -->
           <fieldset class="catalog-filters-group">
             <legend class="catalog-filters-title">Стоимость, ₽:</legend>
-            <label class="catalog-filter-item" for="price-min">
-              <input class="filter-item-input" type="number" name="price-min" id="price-min" min="0" max="9000"
+            <label class="catalog-filter-item price" for="price-min">
+              <input class="filter-item-input price" type="number" name="price-min" id="price-min" min="0" max="9000"
                 value="0" step="100">
               от
             </label>
-            <label class="catalog-filter-item" for="price-max">
-              <input class="filter-item-input" type="number" name="price-max" id="price-max" min="0" max="9000"
+            <label class="catalog-filter-item price" for="price-max">
+              <input class="filter-item-input price" type="number" name="price-max" id="price-max" min="0" max="9000"
                 value="9000" step="100">
               до
             </label>
@@ -154,7 +154,7 @@
             <p class="hotel-item-type">Гостиница</p>
             <p class="hotel-item-price">От 4000 ₽</p>
             <a href="#" class="button">Подробнее</a>
-            <button type="button">В избранное</button>
+            <button type="button" class="button button-wishlist">В избранное</button>
             <p class="stars four-stars">
               <span class="visually-hidden">4 звезды</span>
             </p>
@@ -170,7 +170,7 @@
             <p class="hotel-item-type">Гостиница</p>
             <p class="hotel-item-price">От 5000 ₽</p>
             <a href="#" class="button">Подробнее</a>
-            <button type="button" class="button-active">В избранном</button>
+            <button type="button" class="button button-wishlist-active">В избранном</button>
             <p class="stars four-stars">
               <span class="visually-hidden">4 звезды</span>
             </p>
@@ -186,7 +186,7 @@
             <p class="hotel-item-type">Гостиница</p>
             <p class="hotel-item-price">От 2500 ₽</p>
             <a href="#" class="button">Подробнее</a>
-            <button type="button">В избранное</button>
+            <button type="button" class=" button button-wishlist">В избранное</button>
             <p class="stars three-stars">
               <span class="visually-hidden">3 звезды</span>
             </p>
@@ -202,7 +202,7 @@
             <p class="hotel-item-type">Гостиница</p>
             <p class="hotel-item-price">От 1500 ₽</p>
             <a href="#" class="button">Подробнее</a>
-            <button type="button">В избранное</button>
+            <button type="button" class="button button-wishlist">В избранное</button>
             <p class="stars two-stars">
               <span class="visually-hidden">2 звезды</span>
             </p>
@@ -233,14 +233,14 @@
       </section>
 
       <!-- Сеция подписки -->
-      <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe-catalog">
+        <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-catalog-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post" name="subscribe-form">
           <label class="visually-hidden" for="subscribe-email">E-mail</label>
-          <input class="field" type="email" name="mail-subscriber" id="subscribe-email" placeholder="Ваш e-mail"
+          <input class="field-catalog" type="email" name="mail-subscriber" id="subscribe-email" placeholder="Ваш e-mail"
             required>
-          <button class="subscribe-button button" type="submit">Подписаться</button>
+          <button class="subscribe-catalog-button button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
