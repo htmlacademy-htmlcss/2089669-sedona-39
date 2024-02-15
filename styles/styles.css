@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.navigation-list,
+.advantages-list,
+.offers-list,
+.socials-list,
+.breadcrumbs-list,
+.display-list,
+.hotel-cards,
+.pagination {
+  list-style: none;
+}
+
+.visually-hidden {
+  color: transparent;
+  font-size: 0;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Хедер */
+
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-link.button {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Герой */
+
+.hero-index {
+  background: bottom url("../images/icons/divider.svg"),
+    url("../images/index-background.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #DDEAF3;
+}
+
+.logo-sedona-text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Преимущества */
+
+.advantages-text-bold {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-text {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages-item.blue {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.advantages-item.light-blue {
+  color: inherit;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item.middle-blue {
+  color: inherit;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* Предложения */
+
+.offers-text-bold {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.offers-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.offers-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.offers-text {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.offers-item.middle-blue {
+  color: inherit;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* Поиск */
+
+.search-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* Подпишитесь */
+
+.subscribe {
+  background-image: url(../images/subscribe-1.jpeg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.subscribe-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.field {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(104, 162, 202, 0.3);
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
