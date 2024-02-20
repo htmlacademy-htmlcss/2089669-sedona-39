@@ -44,7 +44,7 @@
     <!-- Основное содержимое страницы -->
     <main class="main-catalog">
       <!-- Секция каталога -->
-      <div class="catalog-hotels">
+      <div class="catalog-hotels" data-test="filter">
         <h1 class="catalog-title">Гостиницы Седоны</h1>
         <!-- Хлебные крошки -->
         <ol class="breadcrumbs-list">
@@ -112,7 +112,7 @@
         </form>
       </div>
       <!-- Секция результатов поиска -->
-      <section class="catalog-results">
+      <section class="catalog-results" data-test="catalog">
         <h2 class="results-title">Найдено гостиниц: <span class="result-number">38</span></h2>
         <form class="pages-range">
           <label class="visually-hidden">Сортировка</label>
@@ -233,19 +233,19 @@
       </section>
 
       <!-- Сеция подписки -->
-      <section class="subscribe-catalog">
+      <section class="subscribe-catalog" data-test="subscribe">
         <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-catalog-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post" name="subscribe-form">
           <label class="visually-hidden" for="subscribe-email">E-mail</label>
-          <input class="field-catalog" type="email" name="mail-subscriber" id="subscribe-email" placeholder="Ваш e-mail"
+          <input class="field-subscribe" type="email" name="mail-subscriber" id="subscribe-email" placeholder="Ваш e-mail"
             required>
           <button class="subscribe-catalog-button button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <!-- Футер -->
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="socials">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="socials-list">
@@ -266,7 +266,7 @@
           </li>
         </ul>
       </section>
-      <section class="cotacts">
+      <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
