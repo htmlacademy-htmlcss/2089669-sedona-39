@@ -19,6 +19,7 @@ body {
   font-size: 18px;
   line-height: 1.17;
   color: #333333;
+  background-color: #F2F2F2;
 }
 
 .navigation-list,
@@ -134,7 +135,7 @@ body {
   color:#000000;
 }
 
-.advantages-item.dark {
+.dark {
   color: #ffffff;
   background-color: #82B3D3;
 }
@@ -143,12 +144,16 @@ body {
   color: #ffffff;
 }
 
-.advantages-item.light {
+.dark .advantages-title {
+  color: #ffffff;
+}
+
+.light {
   color: inherit;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item.medium {
+.medium {
   color: inherit;
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -206,6 +211,7 @@ body {
 .search-button {
   font-size: 20px;
   line-height: 1.8;
+  text-align: center;
 }
 
 /* Подпишитесь */
@@ -241,6 +247,7 @@ body {
 .subscribe-button {
   font-size: 20px;
   line-height: 1.8;
+  background-color: #82B3D3;
 }
 
 /* Контакты */
