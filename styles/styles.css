@@ -695,7 +695,7 @@ body {
   display: inline-block;
   width: 115px;
   height: 33px;
-  mask-image: url(/images/logo-html-academy.svg);
+  mask-image: url(../images/logo-html-academy.svg);
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: #000000;
