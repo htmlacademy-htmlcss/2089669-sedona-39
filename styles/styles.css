@@ -150,7 +150,7 @@ body {
 
 .navigation {
   display: flex;
-  column-gap: 30px;
+  column-gap: 20px;
   width: 1060px;
   margin: 0 auto;
   align-items: center;
@@ -160,7 +160,7 @@ body {
   height: 70px;
   z-index: 1;
   margin-bottom: -6px;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .logo-sedona-small {
