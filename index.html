@@ -160,6 +160,43 @@
         </a>
       </footer>
     </div>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="get" name="modal-form">
+            <fieldset class="modal-checkin">
+              <label class="checkin-label" for="checkin">Дата заезда:</label>
+              <input class="checkin-input" type="text" id="checkin" placeholder="Укажите дату" value="27 апреля 2020">
+              <p class="warning-text">Мы не можем отправить вас в прошлое.</p>
+            </fieldset>
+            <fieldset class="modal-checkout">
+              <label class="checkout-label" for="checkout">Дата выезда:</label>
+              <input class="checkout-input" type="text" id="checkout" placeholder="Укажите дату" value="1 сентября 2023">
+              <p class="info-text">На эти даты есть свободные номера. Пока есть.</p>
+            </fieldset>
+            <div class="modal-fieldset-guests">
+              <fieldset class="modal-adults">
+                <label class="adults-label" for="adults">Взрослые:</label>
+                <input class="adults-input" type="number" id="adults" value="2" min="1" required>
+              </fieldset>
+              <fieldset class="modal-children">
+                <label class="children-label" for="children">Дети:</label>
+                <button class="children-button-info" type="button"></button>
+                <input class="children-input" type="number" id="children" value="2" min="0" required>
+              </fieldset>
+            </div>
+            <button class="modal-submit button button--second" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+
+    </div>
+
   </body>
 
 </html>

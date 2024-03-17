@@ -65,49 +65,66 @@
             <fieldset class="catalog-filters-group">
               <legend class="catalog-filters-title">Инфраструктура</legend>
               <label class="catalog-filter-item" for="pool">
-                <input class="filter-item-input" type="checkbox" name="infrastructure" id="pool" value="pool" checked>
-                Бассейн
+                <input class="visually-hidden filter-item-input" type="checkbox" name="infrastructure" id="pool" value="pool" checked>
+                <span class="checkbox-mark"></span>
+                <span class="checkbox-label">Бассейн</span>
               </label>
               <label class="catalog-filter-item" for="parking">
-                <input class="filter-item-input" type="checkbox" name="infrastructure" id="parking" value="parking"
+                <input class="visually-hidden filter-item-input" type="checkbox" name="infrastructure" id="parking" value="parking"
                   checked>
-                Парковка
+                <span class="checkbox-mark"></span>
+                <span class="checkbox-label">Парковка</span>
               </label>
               <label class="catalog-filter-item" for="wifi">
-                <input class="filter-item-input" type="checkbox" name="infrastructure" id="wifi" value="wifi">
-                Wi-fi
+                <input class="visually-hidden filter-item-input" type="checkbox" name="infrastructure" id="wifi" value="wifi">
+                <span class="checkbox-mark"></span>
+                <span class="checkbox-label">Wi-fi</span>
               </label>
             </fieldset>
             <!-- Радиокнопки тип жилья -->
             <fieldset class="catalog-filters-group">
               <legend class="catalog-filters-title">Тип жилья</legend>
               <label class="catalog-filter-item" for="hotel">
-                <input class="filter-item-input" type="radio" name="accommodation" id="hotel" value="hotel" checked>
-                Гостиница
+                <input class="visually-hidden filter-item-input" type="radio" name="accommodation" id="hotel" value="hotel" checked>
+                <span class="radio-mark"></span>
+                <span class="radio-label">Гостиница</span>
               </label>
               <label class="catalog-filter-item" for="motel">
-                <input class="filter-item-input" type="radio" name="accommodation" id="motel" value="motel">
-                Мотель
+                <input class="visually-hidden filter-item-input" type="radio" name="accommodation" id="motel" value="motel">
+                <span class="radio-mark"></span>
+                <span class="radio-label">Мотель</span>
               </label>
               <label class="catalog-filter-item" for="apartments">
-                <input class="filter-item-input" type="radio" name="accommodation" id="apartments" value="apartments">
-                Апартаменты
+                <input class="visually-hidden filter-item-input" type="radio" name="accommodation" id="apartments" value="apartments">
+                <span class="radio-mark"></span>
+                <span class="radio-label">Апартаменты</span>
               </label>
             </fieldset>
             <!-- Фильтр цены (пока без range) -->
-            <fieldset class="catalog-filters-group price">
-              <legend class="catalog-filters-title">Стоимость, ₽:</legend>
-              <label class="catalog-filter-item price-min" for="price-min">
-                <input class="filter-item-input price-min" type="number" name="price-min" id="price-min" min="0"
-                  max="9000" value="0" step="100">
-                от
-              </label>
-              <label class="catalog-filter-item price-max" for="price-max">
-                <input class="filter-item-input price-max" type="number" name="price-max" id="price-max" min="0"
-                  max="9000" value="9000" step="100">
-                до
-              </label>
-            </fieldset>
+            <div class="filter-price-wrapper">
+              <fieldset class="catalog-filters-group price">
+                <legend class="catalog-filters-title">Стоимость, ₽:</legend>
+                <label class="catalog-price-item" for="price-min">
+                  <input class="filter-item-input price-min" type="number" name="price-min" id="price-min" min="0"
+                    max="9000" value="0" step="100">
+                  <span class="visually-hidden">от</span>
+                </label>
+                <label class="catalog-price-item" for="price-max">
+                  <input class="filter-item-input price-max" type="number" name="price-max" id="price-max" min="0"
+                    max="9000" value="9000" step="100">
+                  <span class="visually-hidden">до</span>
+                </label>
+              </fieldset>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 226px">
+                    <button class="range-toggle toggle-min" type="button">
+                    </button>
+                    <button class="range-toggle toggle-max" type="button"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="form-buttons">
               <button class="button button--second" type="submit">Применить</button>
               <button class="button button--reset" type="reset">Сбросить</button>
