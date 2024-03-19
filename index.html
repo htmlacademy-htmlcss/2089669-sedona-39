@@ -71,16 +71,16 @@
               <p class="advantages-text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantages-item medium">
-              <h3 class="advantages-title">Красивая дорога</h3>
+              <h3 class="advantages-title">Красивая<br> дорога</h3>
               <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages-item light">
-              <h3 class="advantages-title">Мало туристов</h3>
+              <h3 class="advantages-title">Мало<br> туристов</h3>
               <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item-reverse dark">
               <div class="advantages-item-wrapper">
-                <h3 class="advantages-title">Там есть мост дьявола</h3>
+                <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
                 <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
               <img class="advantages-img" src="images/advantages-2.jpeg" width="800" height="385"
@@ -96,15 +96,15 @@
           <ul class="offers-list">
             <li class="offers-item medium">
               <h3 class="offers-title offers-apartment">Жильё</h3>
-              <p class="offers-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="offers-text">Рекомендуем пожить в&nbsp;настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="offers-item">
               <h3 class="offers-title offers-food">Еда</h3>
-              <p class="offers-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="offers-text">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="offers-item medium">
               <h3 class="offers-title offers-souvenirs">Сувениры</h3>
-              <p class="offers-text">Не только китайского, но и настоящего местного производства!</p>
+              <p class="offers-text">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -119,7 +119,7 @@
         <!-- Секция подписки -->
         <section class="subscribe" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post" name="subscribe-form">
             <label class="visually-hidden" for="subscribe-email">E-mail</label>
             <input class="field-subscribe" type="email" name="mail-subscriber" id="subscribe-email"
@@ -169,26 +169,42 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="get" name="modal-form">
-            <fieldset class="modal-checkin">
-              <label class="checkin-label" for="checkin">Дата заезда:</label>
-              <input class="checkin-input" type="text" id="checkin" placeholder="Укажите дату" value="27 апреля 2020">
+            <div class="modal-checkin">
+              <label class="checkin-label" for="checkin">Дата Заезда:</label>
+              <input class="checkin-input" type="text" id="checkin" name="date-checkin" placeholder="Укажите дату" value="27 апреля 2020">
               <p class="warning-text">Мы не можем отправить вас в прошлое.</p>
-            </fieldset>
-            <fieldset class="modal-checkout">
-              <label class="checkout-label" for="checkout">Дата выезда:</label>
-              <input class="checkout-input" type="text" id="checkout" placeholder="Укажите дату" value="1 сентября 2023">
+            </div>
+            <div class="modal-checkout">
+              <label class="checkout-label" for="checkout">Дата Выезда:</label>
+              <input class="checkout-input" type="text" id="checkout" name="date-checkout" placeholder="Укажите дату"
+                value="1 сентября 2023">
               <p class="info-text">На эти даты есть свободные номера. Пока есть.</p>
-            </fieldset>
+            </div>
             <div class="modal-fieldset-guests">
-              <fieldset class="modal-adults">
+              <div class="modal-adults">
                 <label class="adults-label" for="adults">Взрослые:</label>
-                <input class="adults-input" type="number" id="adults" value="2" min="1" required>
-              </fieldset>
-              <fieldset class="modal-children">
-                <label class="children-label" for="children">Дети:</label>
-                <button class="children-button-info" type="button"></button>
-                <input class="children-input" type="number" id="children" value="2" min="0" required>
-              </fieldset>
+                <div class="modal-adults-buttons">
+                  <button class="modal-adults-minus" type="button"></button>
+                  <input class="adults-input" type="number" name="aduts" id="adults" value="2" min="1" required>
+                  <button class="modal-adults-plus" type="button"></button>
+                </div>
+              </div>
+
+              <div class="modal-children">
+                  <label class="children-label" for="children">Дети:</label>
+                  <span class="children-tooltip">
+                    <button class="children-button-tooltip" type="button" aria-labelledby="tooltip-label-childrem"></button>
+                    <span class="children-tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей, которые будут с вами, возраст которых
+                      от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+
+
+                <div class="modal-children-buttons">
+                  <button class="modal-children-minus" type="button"></button>
+                  <input class="children-input" type="number" name="adults" id="children" value="2" min="0" required>
+                  <button class="modal-children-plus" type="button"></button>
+                </div>
+              </div>
             </div>
             <button class="modal-submit button button--second" type="submit">Найти</button>
           </form>
