@@ -1212,7 +1212,7 @@ img {
   position: relative;
   width: 143px;
   height: 48px;
-  padding: 12px 20px;
+  padding: 12px 45px 12px 20px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -1230,7 +1230,7 @@ img {
 .price-max {
   width: 143px;
   height: 48px;
-  padding: 12px 20px;
+  padding: 12px 45px 12px 20px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
