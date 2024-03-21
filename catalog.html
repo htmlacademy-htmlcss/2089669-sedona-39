@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -100,18 +102,18 @@
                 <span class="radio-label">Апартаменты</span>
               </label>
             </fieldset>
-            <!-- Фильтр цены (пока без range) -->
+            <!-- Фильтр цены -->
             <div class="filter-price-wrapper">
               <fieldset class="catalog-filters-group price">
                 <legend class="catalog-filters-title">Стоимость, ₽:</legend>
                 <label class="catalog-price-item" for="price-min">
                   <input class="filter-item-input price-min" type="number" name="price-min" id="price-min" min="0"
-                    max="9000" value="0" step="100">
+                    max="9000" value="0" placeholder="0">
                   <span class="visually-hidden">от</span>
                 </label>
                 <label class="catalog-price-item" for="price-max">
                   <input class="filter-item-input price-max" type="number" name="price-max" id="price-max" min="0"
-                    max="9000" value="9000" step="100">
+                    max="9000" value="9000" placeholder="9000">
                   <span class="visually-hidden">до</span>
                 </label>
               </fieldset>
@@ -146,7 +148,7 @@
             <!-- Список видов отображения страницы -->
             <ul class="display-list">
               <li class="display-item">
-                <a class="display-link icon-tiles" href="#">
+                <a class="display-link icon-tiles display-selected" href="#">
                   <span class="visually-hidden">Упорядочить в виде иконок</span>
                 </a>
               </li>
@@ -274,7 +276,7 @@
         <!-- Сеция подписки -->
         <section class="subscribe-catalog" data-test="subscribe">
           <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-catalog-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-catalog-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post" name="subscribe-form">
             <label class="visually-hidden" for="subscribe-email">E-mail</label>
             <input class="field-subscribe" type="email" name="mail-subscriber" id="subscribe-email"
