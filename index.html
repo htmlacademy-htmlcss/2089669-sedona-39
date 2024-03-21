@@ -11,13 +11,14 @@
   </head>
 
   <body>
+
     <!-- Хедер -->
     <div class="page-wrapper">
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html" aria-current="page">
             <img class="logo-sedona-small" src="images/logo-header.svg" width="140" height="70"
-              alt="Логотип туристического городка Седоны">
+              alt="Логотип туристического городка Седоны.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -47,14 +48,17 @@
           <a class="navigation-link button" href="#">Хочу сюда!</a>
         </nav>
       </header>
+
       <!-- Основное содержимое страницы -->
       <main class="main-index main-container" data-test="main">
+
         <!-- Секция "Hero" -->
         <section class="hero-index" data-test="hero">
           <h1 class="visually-hidden">Туристический городок в Аризоне — Седона</h1>
           <img class="logo-sedona-text" src="images/welcome.svg" width="458" height="352" lang="en"
             alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
         </section>
+
         <!-- Секция "Преимущества" -->
         <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
@@ -67,7 +71,7 @@
                 <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantages-img" src="images/advantages-1.jpeg" width="800" height="385"
-                alt="Домики Седоны в стиле Дикого Запада на фоне гор">
+                alt="Домики Седоны в стиле Дикого Запада на фоне гор.">
             </li>
             <li class="advantages-item light">
               <h3 class="advantages-title">Небольшая площадь</h3>
@@ -87,10 +91,11 @@
                 <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
               <img class="advantages-img" src="images/advantages-2.jpeg" width="800" height="385"
-                alt="Мост дьявола — пейзаж песчаного ущелья">
+                alt="Мост дьявола — пейзаж песчаного ущелья.">
             </li>
           </ul>
         </section>
+
         <!-- Секция "Предложения" -->
         <section class="offers">
           <h2 class="visually-hidden">Наши предложения</h2>
@@ -111,6 +116,7 @@
             </li>
           </ul>
         </section>
+
         <!-- Секция поиска -->
         <section class="search" data-test="search">
           <h2 class="search-title">Заинтересовались?</h2>
@@ -119,6 +125,7 @@
             Седоне</p>
           <a class="search-button button" href="#">Поиск гостиницы в Седоне</a>
         </section>
+
         <!-- Секция подписки -->
         <section class="subscribe" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -131,6 +138,7 @@
           </form>
         </section>
       </main>
+
       <!-- Футер -->
       <footer class="page-footer" data-test="footer">
         <section class="socials">
@@ -158,12 +166,12 @@
           <a class="contacts-phone link--active" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <a class="developer-logo link--active" href="https://htmlacademy.ru/">
-          <!-- <img class="developer-logo-img" src="images/logo-html-academy.svg" width="115" height="33"
-            alt="Сайт разработан в HTML-академии"> -->
+          <span class="visually-hidden">Сайт разработан в HTML-академии</span>
         </a>
       </footer>
     </div>
 
+    <!-- Модальное окно -->
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <button class="modal-close-button" type="button">
@@ -174,7 +182,8 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="get" name="modal-form">
             <div class="modal-checkin">
               <label class="checkin-label" for="checkin">Дата Заезда:</label>
-              <input class="checkin-input" type="text" id="checkin" name="date-checkin" placeholder="Укажите дату" value="27 апреля 2020" required>
+              <input class="checkin-input" type="text" id="checkin" name="date-checkin" placeholder="Укажите дату"
+                value="27 апреля 2020" required>
               <p class="warning-text">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="modal-checkout">
@@ -187,25 +196,35 @@
               <div class="modal-adults">
                 <label class="adults-label" for="adults">Взрослые:</label>
                 <div class="modal-adults-buttons">
-                  <button class="modal-adults-minus" type="button"></button>
-                  <input class="adults-input" type="number" name="adults" id="adults" value="2" min="1" required>
-                  <button class="modal-adults-plus" type="button"></button>
+                  <button class="modal-adults-minus" type="button">
+                    <span class="visually-hidden">Удалить одного взрослого</span>
+                  </button>
+
+                  <input class="adults-input" type="number" name="adults" id="adults" value="2" min="1" placeholder="2"
+                    required>
+                  <button class="modal-adults-plus" type="button">
+                    <span class="visually-hidden">Добавить одного взрослого</span>
+                  </button>
                 </div>
               </div>
-
               <div class="modal-children">
-                  <label class="children-label" for="children">Дети:</label>
-                  <span class="children-tooltip">
-                    <button class="children-button-tooltip" type="button" aria-labelledby="tooltip-label-childrem"></button>
-                    <span class="children-tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей, которые будут с вами, возраст которых
-                      от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                  </span>
-
-
+                <label class="children-label" for="children">Дети:</label>
+                <span class="children-tooltip">
+                  <button class="children-button-tooltip" type="button"
+                    aria-labelledby="tooltip-label-children"></button>
+                  <span class="children-tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество
+                    детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются
+                    бесплатно.</span>
+                </span>
                 <div class="modal-children-buttons">
-                  <button class="modal-children-minus" type="button"></button>
-                  <input class="children-input" type="number" name="children" id="children" value="2" min="0" required>
-                  <button class="modal-children-plus" type="button"></button>
+                  <button class="modal-children-minus" type="button">
+                    <span class="visually-hidden">Удалить одного ребенка</span>
+                  </button>
+                  <input class="children-input" type="number" name="children" id="children" value="2" min="0"
+                    placeholder="2" required>
+                  <button class="modal-children-plus" type="button">
+                    <span class="visually-hidden">Добавить одного ребенка</span>
+                  </button>
                 </div>
               </div>
             </div>
