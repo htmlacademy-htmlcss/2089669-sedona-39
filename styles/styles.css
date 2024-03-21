@@ -1331,8 +1331,7 @@ img {
 
 .catalog-results {
   width: 1060px;
-  margin: 0 auto;
-  padding-top: 50px;
+  padding: 50px 70px 0 70px;
 }
 
 .results-filters {
@@ -1340,6 +1339,7 @@ img {
   column-gap: 70px;
   align-items: center;
   justify-content: space-between;
+  width: 1060px;
   margin-bottom: 40px;
 }
 
